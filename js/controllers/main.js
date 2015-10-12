@@ -12,6 +12,8 @@
 		//exposed members first
 		vm.categories = [];
 		vm.newCategory = {};
+		vm.selectedCategory = null;
+		vm.nested = false;
 		vm.save = save;
 
 		Categories
@@ -23,7 +25,13 @@
 		}
 
 		function save(){
-			vm.categories.push(vm.newCategory);
+			var collection = vm.categories;
+			if(vm.selectedCategory){
+				vm.selectedCategory.subcategories = vm.selectedCategory.subcategories || [];
+				collection = vm.selectedCategory.subcategories;
+				vm.selectedCategory = null;
+			}
+			collection.push(vm.newCategory);
 			vm.newCategory = {};
 		}
 	}

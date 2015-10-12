@@ -2,7 +2,7 @@
   "name": "wix",
   "version": "0.0.0",
   "authors": [
-    "sminutoli <sminutoli.it@gmail.com>"
+    "sminutoli <sergio.minutoli@gmail.com>"
   ],
   "description": "Category listing tree",
   "main": "js/app.js",
