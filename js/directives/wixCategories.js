@@ -33,21 +33,23 @@
 
 						var current = category;
 						var last = current;
+
+						var container = domElement;
+
 						while (current) {
 						  
 						  var li = angular.element('<li>').text(current.name)
-						  domElement.append( li );
+						  container.append( li );
 
 						  var children = current.subcategories;
 						  
 						  for (var i2 = 0; children && i2 < children.length; i2++) {
 						    var ul = angular.element('<ul>');
 						    li.append(ul);
-						    domElement = ul;
+						    container = ul;
 
 						    var child = children[i2];
 						    child.next = null;
-						    child.domParent = domElement.parent();
 						    last.next = child;
 						    last = child;
 						    
