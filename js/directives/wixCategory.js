@@ -16,6 +16,9 @@
 
 				drawCategory(element, scope.category);
 				
+				var kill = scope.$on('redraw', drawCategory.bind(null, element, scope.category) );
+				scope.$on('$destroy', kill);
+
 			}
 		}
 

@@ -6,7 +6,7 @@
 		.module('categories')
 		.controller('Main', Main);
 
-	function Main(Categories){
+	function Main($scope, Categories){
 		var vm = this;
 
 		//exposed members first
@@ -32,6 +32,8 @@
 				vm.selectedCategory = null;
 			}
 			collection.push(vm.newCategory);
+			$scope.$broadcast('redraw');
+
 			vm.newCategory = {};
 		}
 	}
