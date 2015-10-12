@@ -1,0 +1,20 @@
+{
+  "name": "wix",
+  "version": "0.0.0",
+  "authors": [
+    "sminutoli <sminutoli.it@gmail.com>"
+  ],
+  "description": "Category listing tree",
+  "main": "js/app.js",
+  "keywords": [
+    "excercise"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

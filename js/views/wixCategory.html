@@ -1,0 +1,7 @@
+{{category.name}}
+<ul ng-if="category.subcategories">
+	<li 
+		ng-repeat="category in category.subcategories"
+		ng-include="'js/views/wixCategory.html'"
+		></li>
+</ul>

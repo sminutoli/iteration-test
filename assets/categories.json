@@ -1,0 +1,36 @@
+[
+	{
+		"name": "Home"
+	},
+	{
+		"name": "The company",
+		"subcategories": [
+			{"name": "Headquarters"},
+			{"name": "We are awesome"},
+			{
+				"name": "Partners",
+				"subcategories": [
+					{
+						"name": "Some nice guys",
+						"subcategories": [
+							{"name": "Justice League"},
+							{"name": "Amazing 4"},
+							{"name": "Avengers"}
+						]
+					},
+					{
+						"name": "Some evil guys"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Clients",
+		"subcategories": [
+			{"name": "Google"},
+			{"name": "YMCA"},
+			{"name": "Nothing Records"}
+		]
+	}
+]

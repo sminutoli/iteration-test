@@ -1,0 +1,17 @@
+{
+  "name": "wix",
+  "version": "1.0.0",
+  "description": "the test",
+  "main": "js/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "sminutoli",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
