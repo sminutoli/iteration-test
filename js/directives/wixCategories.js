@@ -24,6 +24,7 @@
 
 					var all = newVal;
 					var domElement = element;
+					domElement.empty();
 					
 					for(var i=0; i < all.length; i++){
 
@@ -42,13 +43,13 @@
 						  for (var i2 = 0; children && i2 < children.length; i2++) {
 						    var ul = angular.element('<ul>');
 						    li.append(ul);
+						    domElement = ul;
 
 						    var child = children[i2];
 						    child.next = null;
 						    child.domParent = domElement.parent();
 						    last.next = child;
 						    last = child;
-						    domElement = child.domParent;
 						    
 						  }
 						  current = current.next;

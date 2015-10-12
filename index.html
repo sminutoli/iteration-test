@@ -27,8 +27,8 @@
 
 	<hr>
 
-	<form action="" novalidation>
-		<input type="text" name="categoryName" placeholder="Category Name">
+	<form ng-submit="main.save()" novalidate>
+		<input type="text" name="categoryName" placeholder="Category Name" ng-model="main.newCategory.name">
 		<button>Add new category</button>
 	</form>
 	

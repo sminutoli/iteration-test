@@ -11,6 +11,8 @@
 
 		//exposed members first
 		vm.categories = [];
+		vm.newCategory = {};
+		vm.save = save;
 
 		Categories
 			.getAll()
@@ -18,6 +20,11 @@
 
 		function populate(data){
 			angular.copy(data, vm.categories);
+		}
+
+		function save(){
+			vm.categories.push(vm.newCategory);
+			vm.newCategory = {};
 		}
 	}
 
